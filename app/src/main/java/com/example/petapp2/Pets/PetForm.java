@@ -214,6 +214,8 @@ public class PetForm extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 Toast.makeText(PetForm.this,"Pet created!",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(PetForm.this,MainActivity.class);
+                startActivity(intent);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
