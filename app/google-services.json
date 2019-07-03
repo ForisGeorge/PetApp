@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "81281504650",
+    "firebase_url": "https://petapp2-826a1.firebaseio.com",
+    "project_id": "petapp2-826a1",
+    "storage_bucket": "petapp2-826a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81281504650:android:40b049c5da004920",
+        "android_client_info": {
+          "package_name": "com.example.petapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81281504650-jo7hqhvdav1l3m5tbrfkke6h44m15906.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petapp2",
+            "certificate_hash": "de4d11eb250f786a75c0ba2bb63b37f15a5bb1e9"
+          }
+        },
+        {
+          "client_id": "81281504650-s2j1q4r4eht0ts8361r8ilq2pg2kq2t5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0XU1QfqC_O0Ac6xDpKms3hmCd3I3IF1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81281504650-s2j1q4r4eht0ts8361r8ilq2pg2kq2t5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
