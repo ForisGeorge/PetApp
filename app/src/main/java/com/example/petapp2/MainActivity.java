@@ -175,12 +175,12 @@ public class MainActivity extends AppCompatActivity
                 raceView.setText(pet.getRace());
                 Glide.with(this).load(pet.getUri()).centerCrop().into(petImage);
                 birthdayView.setText(pet.getBirthday());
-                ageCalculator(pet.getBirthday());
+                this.ageView.setText(ageCalculator(pet.getBirthday()));
             }
         }
     }
 
-    private void ageCalculator (String birthday){
+    private String ageCalculator (String birthday){
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         Calendar calendar = Calendar.getInstance();
         try{
@@ -193,7 +193,10 @@ public class MainActivity extends AppCompatActivity
        long date = today.getTimeInMillis() - calendar.getTimeInMillis();
        Calendar age = Calendar.getInstance();
        age.setTimeInMillis(date);
-       this.ageView.setText(age.YEAR + " years and " + age.MONTH + " months ");
+       Integer years = age.YEAR;
+       Integer months = age.MONTH;
+       String ageString =  years.toString() + " years and " + months.toString() + " months ";
+       return ageString;
     }
 
 }

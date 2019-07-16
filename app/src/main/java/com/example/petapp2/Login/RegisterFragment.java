@@ -85,6 +85,10 @@ private FirebaseAuth firebaseAuth;
             Toast.makeText(getActivity(),"Please enter email",Toast.LENGTH_SHORT).show();
             return;
         }
+        if(password.length() < 7){
+            Toast.makeText(getActivity(),"Password requires at least 7 characters!",Toast.LENGTH_SHORT).show();
+            return;
+        }
         if(TextUtils.isEmpty(password)){
             Toast.makeText(getActivity(),"Please enter password!",Toast.LENGTH_SHORT).show();
             return;
